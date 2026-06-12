@@ -10,11 +10,11 @@ import os
 #load_dotenv()
 
 # Set to True to test the pipeline with fake data (no API calls, no quota used)
-DRY_RUN = True
+DRY_RUN = False
 
 #YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
-YOUTUBE_API_KEY = "YOUR_YOUTUBE_KEY"
+YOUTUBE_API_KEY = "**********************"
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 
 if not DRY_RUN:
