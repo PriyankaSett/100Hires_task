@@ -1,7 +1,0 @@
-# Sources
-
-## LinkedIn Posts
-
-## YouTube Transcripts
-
-## Other
