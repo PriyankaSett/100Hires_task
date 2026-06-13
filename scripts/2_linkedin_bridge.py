@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import time
 
-SERPAPI_KEY = "*******************"
+SERPAPI_KEY = "**************************"
 
 def find_linkedin(name, topic_hint="SEO AI content"):
     q = f'site:linkedin.com/in "{name}" {topic_hint}'
@@ -17,7 +17,7 @@ def find_linkedin(name, topic_hint="SEO AI content"):
     return None
 
 yt = pd.read_csv("scripts/output/youtube_candidates.csv")
-names = yt.sort_values("score", ascending=False)["channel_name"].head(25).tolist()
+names = yt.sort_values("final_score", ascending=False)["channel_name"].head(25).tolist()
 
 results = []
 for name in names:
